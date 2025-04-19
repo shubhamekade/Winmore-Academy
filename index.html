@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Winmore Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      @font-face {
+        font-family: 'GothamBold';
+        src: url('/font/GothamBold.woff') format('woff');
+    }
+    @font-face {
+        font-family: 'GothamMedium';
+        src: url('/font/GothamMedium.woff') format('woff');
+    }
+    @font-face {
+        font-family: 'GothamLight';
+        src: url('/font/GothamLight.woff') format('woff');
+    }
+    @font-face {
+        font-family: 'GothamBook';
+        src: url('/font/GothamBook.woff') format('woff');
+    }
+    body {
+        font-family: 'GothamMedium';
+    }
+    .heading1 {
+        color: #5B0F31;
+        font-size: 65px; /* Responsive */
+        font-weight: 700;
+        font-family:"GothamBold";
+    }
+    .heading2 {
+        font-size: 16px; /* Responsive */
+        font-weight: 700;
+    }
+
+    .Whitefeild{
+        width: 75%;
+    } 
+    .Jakkur{
+        width: 75%;
+    }
+
+    .address {
+        font-size: 16px; /* Responsive */
+        text-align: left;
+        font-weight: 300;
+        color: #0B0B0B;
+        font-family: 'GothamBook';
+    }
+    .contact-no{
+        font-size: 16px; /* Responsive */
+        font-family:"GothamBold";
+    }
+    .email-add {
+        font-size: 16px; /* Responsive */
+        font-family:"GothamBook";
+    }
+    .btn-know-more {
+        background: #5B0F31;
+        border: 1px solid #707070;
+        border-radius: 48px;
+        color: white;
+        padding: 10px 25px;
+        font-size: 16px; /* Responsive */
+    }
+    .image-grid {
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+        gap: 3rem;
+        flex-wrap: wrap; /* Ensure images wrap on smaller screens */
+    }
+    .image-item img {
+        border: 5px solid white;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+    }
+    footer {
+        background: #ddddddd9;
+        padding-top: 2rem;
+    }
+    img.img-fluid.logo {
+        width: 145px;
+    }
+    .footer-logo{
+        width: 150px;
+    }
+    .copyright {
+        font-size: 13px;
+        font-family: 'GothamBook';
+    }
+    .follow-us {
+        font-size: small;
+    }
+    .sub-heading{
+        font-size: 20px; 
+        color: #243C7C;
+        font-family: 'GothamMedium';
+    }
+    @media only screen and (min-width: 425px) {
+    
+        section.container {
+            width: 95%;
+            max-width: 100%;
+        }
+
+        div.container {
+            width: 95%;
+            max-width: 100%;
+        }
+         .footer-left-section {
+            width: 335px;
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+    @media only screen and (max-width: 425px) {
+        .footer-logo{
+            width: 100px;
+        }
+       
+        img.img-fluid.logo {
+            width: 100px;
+        }
+        .heading1 {
+            font-size: 32px;
+       }
+       .btn-know-more {
+            padding: 8px 16px;
+            font-size: 12px;
+        }
+        .Whitefeild{
+            width: 75%;
+        } 
+        .Jakkur{
+            width: 75%;
+        }
+        .sub-heading {
+            font-size: 16px;
+        }
+
+    }
+     hr {
+        width: 195px;
+    }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <section class="container-fluid mb-5">
+        <header class="d-flex justify-content-center mt-4 mb-4">
+            <img class="img-fluid logo" src="/image/Wnmore Logo.png" alt="Winmore Logo">
+        </header>
+    </section>
+
+    <!-- Main Content -->
+    <section class="container">
+        <div class="row mb-3">
+            <div class="col-12 col-lg-7">
+                <h1 class="text-uppercase heading1">Welcome to <br>Winmore Academy</h1>
+                <p class="text-uppercase mt-5 sub-heading" >Select Your Campus</p>
+                <hr>
+                <div class="row">
+                    <div class="col-6 mt-3 mb-3">
+                        <img class="img-fluid Jakkur" src="/image/Jakkur Logo.png" alt="Jakkur Campus">
+                        <button class="btn-know-more mt-2" onclick='window.location.href="https://www.winmoreacademyjakkur.com"'>Know More</button>
+                    </div>
+                    <div class="col-6 mt-3 mb-3">
+                        <img class="img-fluid Whitefeild" src="/image/Whitefeild logo.png" alt="Whitefield Campus">
+                        <button class="btn-know-more mt-2" onclick='window.location.href="https://www.winmoreacademywhitefield.com"'>Know More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <img class="img-fluid " src="/image/image.png" alt="Classroom Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-5 pb-4 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <p class="heading2">Winmore Academy (Jakkur Campus)</p>
+                            <p class="address">Survey No. 37/1, Nehru Nagar <br>Shivannahalli, Off, Jakkur - Yelahanka <br>Rd, Bengaluru, Karnataka 560064.</p>
+                            <p class="contact-no">+91 63613 40286 / +91 70905 03030</p>
+                            <p class="email-add">office.jk@winmoreacacdemy.com</p>
+                            <!-- Follow Us Section -->
+                            <div class="follow-us mb-5">
+                                <span>Follow us: </span>
+                                <a href="https://www.facebook.com/winmore.academy/" class="ms-2"><img src="/image/FB Logo.png" alt="Facebook" style="width: 14px; "></a>
+                                <a href="https://www.instagram.com/winmoreacademyjk/" class="ms-2"><img src="/image/Insta Logo.png" alt="Instagram" style="width: 24px; "></a>
+                                <a href="https://www.linkedin.com/company/winmore-academy-jakkur/" class="ms-2"><img src="/image/Linkedin Logo.png" alt="LinkedIn" style="width: 24px; "></a>
+                                <a href="https://www.youtube.com/@winmoreacademy2336" class="ms-2"><img src="/image/Youtube Logo.png" alt="YouTube" style="width: 30px; "></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p class="heading2">Winmore Academy (Whitefield Campus)</p>
+                            <p class="address">Survey No 13/1, Bhaktharahalli <br>Village, Bengaluru, Karnataka <br>560067.</p>
+                            <p class="contact-no">+91 91484 49538 / +91 91484 49539</p>
+                            <p class="email-add">office.wf@winmoreacacdemy.com</p>
+                            <!-- Follow Us Section -->
+                            <div class="follow-us mb-5">
+                                <span>Follow us: </span>
+                                <a href="https://www.facebook.com/profile.php?id=61563331611163" class="ms-2"><img src="/image/FB Logo.png" alt="Facebook" style="width: 14px; "></a>
+                                <a href="https://www.instagram.com/winmoreacademywf" class="ms-2"><img src="/image/Insta Logo.png" alt="Instagram" style="width: 24px; "></a>
+                                <a href="https://www.linkedin.com/company/winmore-academy-whitefield/" class="ms-2"><img src="/image/Linkedin Logo.png" alt="LinkedIn" style="width: 24px; "></a>
+                                <a href="http://www.youtube.com/@WinmoreAcademyWhitefield-f7b" class="ms-2"><img src="/image/Youtube Logo.png" alt="YouTube" style="width: 30px; "></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 text-center">
+                    <div class="footer-left-section">
+                        <img class="img-fluid footer-logo" src="/image/Winmore Shield logo.png" alt="Winmore Shield Logo">
+                        <p class="copyright">&copy; 2024 WINMORE ACADEMY. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
